@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+      //ejemplo css y javascripts
+      function showHide() {
+        if (document.getElementById('text1').style.display == 'none') {
+          document.getElementById('text1').style.display = 'block';
+        } else {
+          document.getElementById('text1').style.display = 'none';
+        }
+      }
+    </script>
+
+    <script>
+      $(function () {
+        $('#chkbtnDate').hide();
+      });
+
+      $(function () {
+        $('#chkbtn').on('click', function () {
+          $('#chkbtnDate').toggle();
+          document.getElementById('chkbtnDate').innerHTML = new Date();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    Ejemplo con Jquery:
+    <br />
+    <button type="date" id="chkbtnDate">Fecha</button>
+    <button id="chkbtn">Mostrar/Ocultar</button>
+
+    <!-- ejemplo con css y javascript-->
+
+    <br />
+    <br />
+    <br />
+    Ejemplo con css y javascript:
+    <br />
+    <a href="#" onclick="showHide(); return false;">Mostrar/Ocultar</a>
+    <span id="text1" style="display: none"
+      >Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</span
+    >
+  </body>
+</html>

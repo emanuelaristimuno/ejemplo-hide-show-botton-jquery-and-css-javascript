@@ -1,0 +1,11 @@
+body {
+  background: orange;
+}
+
+.hide{
+  display:none;
+  }
+  
+  .show{
+  display:block;
+  }
